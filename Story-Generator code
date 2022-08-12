@@ -1,0 +1,141 @@
+## Story Generator ##
+## Created by VTank01 ##
+## This is a Story Generator game using Tkinter GUI to create a story from inputs. ##
+
+from tkinter import *
+import tkinter as tk
+from tkinter import ttk #this will give us a themed tkinter
+from tkinter.constants import BOTTOM, LEFT, RIGHT, TOP, X, Y
+
+
+root = tk.Tk()
+root.geometry('750x600')
+root.title('Generator Program')
+Label(root, text= 'Story Generator \n Have Fun!' , font = 'arial 20 bold').pack()
+Label(root, text = 'Click Any One :', font = 'arial 15 bold').place(x=40, y=80)
+
+frame1 = Frame(root, bg = 'grey', padx=2, pady=19)
+frame1.pack(side=LEFT, fill=Y)
+
+frame2 = Frame(root, padx=5, pady=20)
+frame2.pack(side=LEFT, fill= Y)
+
+#------------------------------------------------------------------------------------
+label = Label(frame1, text="ENTER YOUR NAME: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_name = ttk.Entry(frame2, width= 40)
+entry_name.pack(padx=0, pady=6, ipady=2)
+name_input = entry_name.get()
+
+label = Label(frame1, text="ENTER PROFESSION NAME: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_profession = ttk.Entry(frame2, width= 40)
+entry_profession.pack(padx=0, pady=6, ipady=2)
+profession_input = entry_profession.get()
+
+label = Label(frame1, text="ENTER COUNTRY NAME: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_country = ttk.Entry(frame2, width= 40)
+entry_country.pack(padx=0, pady=6, ipady=2)
+country_input = entry_country.get()
+
+label = Label(frame1, text="ENTER A PLACE NAME: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_building = ttk.Entry(frame2, width= 40)
+entry_building.pack(padx=0, pady=6, ipady=2)
+building_input = entry_building.get()
+
+label = Label(frame1, text="ENTER FOOD NAME: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_food = ttk.Entry(frame2, width= 40)
+entry_food.pack(padx=0, pady=6, ipady=2)
+food_input = entry_food.get()
+
+label = Label(frame1, text="ENTER ANIMAL NAME: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_animal = ttk.Entry(frame2, width= 40)
+entry_animal.pack(padx=0, pady=5, ipady=2)
+animal_input = entry_animal.get()
+
+label = Label(frame1, text="ENTER COLOR NAME: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_color = ttk.Entry(frame2, width= 40)
+entry_color.pack(padx=0, pady=5, ipady=2)
+color_input = entry_color.get()
+
+label = Label(frame1, text="ENTER A THING: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_thing = ttk.Entry(frame2, width= 40)
+entry_thing.pack(padx=0, pady=5, ipady=2)
+thing_input = entry_thing.get()
+
+label = Label(frame1, text="ENTER AN INSECT NAME: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_insect = ttk.Entry(frame2, width= 40)
+entry_insect.pack(padx=0, pady=5, ipady=2)
+insect_input = entry_insect.get()
+
+label = Label(frame1, text="ENTER FAVORITE COSTUME NAME: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_costume = ttk.Entry(frame2, width= 40)
+entry_costume.pack(padx=0, pady=5, ipady=2)
+costume_input = entry_costume.get()
+
+label = Label(frame1, text="ENTER YOUR FRIENDS NAME: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_person = ttk.Entry(frame2, width= 40)
+entry_person.pack(padx=0, pady=5, ipady=2)
+person_input = entry_person.get()
+
+label = Label(frame1, text="ENTER FAVORITE CANDY NAME: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_candy = ttk.Entry(frame2, width= 40)
+entry_candy.pack(padx=0, pady=5, ipady=2)
+candy_input = entry_candy.get()
+
+label = Label(frame1, text="ENTER YOUR EMOTION: ", font=("Helvetica", 10))
+label.pack(padx=5, pady=7)
+entry_emotion = ttk.Entry(frame2, width= 40)
+entry_emotion.pack(padx=0, pady=5, ipady=2)
+emotion_input = entry_emotion.get()
+
+
+
+def Cave():
+    print1 = print("Hello, I am " + entry_name.get() + ", I am a " + entry_profession.get() + ". I was on an adventure in " + entry_country.get() + ", where I stayed in a " + entry_building.get() + " and ate " + entry_food.get() + " at an inn. I overheard rumors around here, about a cave. People said there lives a scary " + entry_animal.get() + " that eats everyone at night. I will go and hunt this animal and become a hero.")
+    root = Tk()
+    ttk.Label(root, text= ("Hello, I am " + entry_name.get() + ", I am a " + entry_profession.get() + ". I was on an adventure in " + entry_country.get() + ", where I stayed in a " + entry_building.get() + " and ate " + entry_food.get() + " at an inn. I overheard rumors around here, about a cave."), font=("Helvetica", 10)).pack() #this code will print a label
+    label.pack(ipadx=15, ipady=20)
+    ttk.Label(root, text= ("People said there lives a scary " + entry_animal.get() + " that eats everyone at night. I will go and hunt this animal and become a hero."), font=("Helvetica", 10)).pack() #this code will print a label
+    label.pack(ipadx=15, ipady=20)
+
+def Apple():
+    print("I was dreaming last night about an apple whose color was " + entry_color.get() + ". I have never seen such a fruit before, it looked like a " + entry_thing.get() + ". I saw so many " + entry_insect.get() + "crawling on that tree to eat this apple. I was in the jungle of " + entry_country.get() + ". I went to the river to drink water and saw my reflection, I was a " + entry_animal.get() + ". Suddenly I woke up when the alarm went off.")
+    root = Tk()
+    ttk.Label(root, text= ("I was dreaming last night about an apple whose color was " + entry_color.get() + ". I have never seen such a fruit before, it looked like a " + entry_thing.get() + ". I saw so many " + entry_insect.get() + "s crawling on that tree to eat this apple."), font=("Helvetica", 10)).pack() #this code will print a label
+    label.pack(ipadx=15, ipady=20)
+    ttk.Label(root, text= (" I was in a jungle of " + entry_country.get() + ". I went to the river to drink water and saw my reflection, I was a " + entry_animal.get() + ". Suddenly I woke up when the alarm went off."), font=("Helvetica", 10)).pack() #this code will print a label
+    label.pack(ipadx=15, ipady=20)
+
+def Halloween():
+    print("I was dressed as a " + entry_costume.get() + " on Halloween. I went to trick or treat around " + entry_country.get() + "with " + entry_person.get() + ". We ate alot of " + entry_candy.get() + "candies, I was really " + entry_emotion.get() + ", and so I came home and ate " + entry_food.get() + "then I fell asleep.")  
+    root = Tk()
+    ttk.Label(root, text= ("I was dressed as a " + entry_costume.get() + " on Halloween. I went to trick or treat around " + entry_country.get() + " with " + entry_person.get() + "."), font=("Helvetica", 10)).pack() #this code will print a label
+    label.pack(ipadx=15, ipady=20)
+    ttk.Label(root, text= ("We got alot of " + entry_candy.get() + " candies, I was really " + entry_emotion.get() + ", afterwards I came home and ate " + entry_food.get() + " then I fell asleep."), font=("Helvetica", 10)).pack() #this code will print a label
+    label.pack(ipadx=15, ipady=20)
+
+
+
+#-------------------------------------------------------------------------------------
+frame3 = Frame(root, padx=5, pady=20)
+frame3.pack(side=RIGHT, fill= Y)
+
+button = Button(root, text= 'The Cave', font ='arial 15', command= Cave)
+button.pack(side= TOP, padx=10, pady=10, ipady=5)
+button = Button(root, text= 'The Dream', font ='arial 15', command = Apple , bg = 'ghost white')
+button.pack(side= TOP, padx=10, pady=10, ipady=5)
+button = Button(root, text= 'Halloween', font ='arial 15', command = Halloween, bg = 'ghost white')
+button.pack(side= TOP, padx=10, pady=10, ipady=5)
+
+root.mainloop()
